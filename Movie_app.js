@@ -285,12 +285,17 @@ function openNav(movie) {
     }
   })
 }
-
+ 
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
-
+// let closebtnEl = document.getElementById("closebtn");
+// var frame = document.getElementById("player_id")
+// closebtnEl.addEventListener('click',(closebtn) => {
+//   frame.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+//   document.getElementById("myNav").style.width = "0%";
+// })
 function getColor(vote) {
     if(vote>= 8){
         return 'green'

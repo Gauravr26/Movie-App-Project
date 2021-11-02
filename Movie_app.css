@@ -18,14 +18,23 @@ body{
 
 header{
     padding:0.5rem;
-    background-color: var(--secondary-color);
-}
-
-.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--secondary-color);
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      width:fit-content;
+    }
+    .search{
+        padding: 20px 50px;
+        border-radius: 20px;
+        border: 1px solid;
+    }
+  }
+
 .search{
     background-color: whitesmoke;
     border: 2px solid ;
